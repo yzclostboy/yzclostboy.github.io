@@ -34,10 +34,10 @@ p {
 
 .bg_player {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50%;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
+    -webkit-filter: blur(65px);
+    filter: blur(65px);
     opacity: .8;
     -webkit-transform: translateZ(0);
     transform: translateZ(0)
@@ -138,9 +138,10 @@ p {
 }
 .btn_control {
     position: absolute;
-    left: 17px;
-    bottom: 52px;
+    left: 80px;
+    bottom: 80px;
     display: block;
+    z-index: 100;
 }
 
 a, a:hover {
@@ -164,6 +165,8 @@ a:-webkit-any-link {
     background-size: 150px auto;
     width: 45px;
     height: 45px;
+    transform: scale(1.8);
+    z-index: 100;
 }
         </style>
 </head>
@@ -177,64 +180,7 @@ a:-webkit-any-link {
                 <div class="mod_only_lyric js_lyric_box">
                     <!-- 控制only_lyric__inner来做滚动 -->
                     <div class="only_lyric__inner qrc_ctn" data-mod="2" style="transition: -webkit-transform 0.1s ease-out 0s; transform: translateY(180px);">
-                        <p data-id="line_null">&nbsp;</p>
-                        <p data-id="line_0">眼泪成诗 (Live) - 张靓颖</p>
-                        <p data-id="line_1">原唱：孙燕姿</p>
-                        <p data-id="line_2">词：林夕</p>
-                        <p data-id="line_3">曲：刘宝龙</p>
-                        <p data-id="line_4">编曲：刘卓</p>
-                        <p data-id="line_5">制作人：张靓颖</p>
-                        <p data-id="line_6">音乐总监：刘卓</p>
-                        <p data-id="line_7">音响总监：金少刚</p>
-                        <p data-id="line_8">Bandleader：尹岳洋</p>
-                        <p data-id="line_9">吉他：金冬昱/高恭鹏/孙闻楠</p>
-                        <p data-id="line_10">键盘：孙梦迪/王义雄/尹岳洋</p>
-                        <p data-id="line_11">Program：尹岳洋</p>
-                        <p data-id="line_12">贝斯：娄弘荻</p>
-                        <p data-id="line_13">鼓手：张大伟/陈志龙</p>
-                        <p data-id="line_14">打击乐：王宏涛</p>
-                        <p data-id="line_15">和音：朱江/黄琬婷/戈锐/嘉琪</p>
-                        <p data-id="line_16">弦乐：靳海音®弦乐团</p>
-                        <p data-id="line_17">音乐混音：周天澈混音团队</p>
-                        <p data-id="line_18">我已经</p>
-                        <p data-id="line_19">已经把我伤口化作玫瑰</p>
-                        <p data-id="line_20">我的泪水</p>
-                        <p data-id="line_21">已经变成雨水早已轮回</p>
-                        <p data-id="line_22">我已经</p>
-                        <p data-id="line_23" class="">已经把对白留成了永远</p>
-                        <p data-id="line_24" class="">忘了天色</p>
-                        <p data-id="line_25" class="">究竟是黑是灰</p>
-                        <p data-id="line_26" class="">分手伤了谁</p>
-                        <p data-id="line_27" class="">谁把他变美</p>
-                        <p data-id="line_28" class="">我的眼泪写成了诗</p>
-                        <p data-id="line_29" class="">已无所谓</p>
-                        <p data-id="line_30" class="">让你再回味</p>
-                        <p data-id="line_31" class="">字不醉人人自醉</p>
-                        <p data-id="line_32" class="">因为回忆总是美</p>
-                        <p data-id="line_33" class="">我已经</p>
-                        <p data-id="line_34" class="">已经把绝情变成了恭维</p>
-                        <p data-id="line_35" class="">因为不配</p>
-                        <p data-id="line_36" class="">你就忽然自卑说声失陪</p>
-                        <p data-id="line_37" class="">我已经</p>
-                        <p data-id="line_38" class="">已经把沉默变成了忏悔</p>
-                        <p data-id="line_39" class="">无路可退</p>
-                        <p data-id="line_40" class="">只能无言以对</p>
-                        <p data-id="line_41" class="">分手伤了谁</p>
-                        <p data-id="line_42" class="">谁把他变美</p>
-                        <p data-id="line_43" class="">我的眼泪写成了诗</p>
-                        <p data-id="line_44" class="">已无所谓</p>
-                        <p data-id="line_45" class="">让你再回味</p>
-                        <p data-id="line_46" class="">字不醉人人自醉</p>
-                        <p data-id="line_47" class="">因为回忆总是美</p>
-                        <p data-id="line_48" class="">分手伤了谁</p>
-                        <p data-id="line_49" class="on">谁把他变美</p>
-                        <p data-id="line_50">我的眼泪写成了诗一首无所谓</p>
-                        <p data-id="line_51">让你再回味</p>
-                        <p data-id="line_52">字不醉人人自醉</p>
-                        <p data-id="line_53">你的回味总是美</p>
-                        <p data-id="line_54">我已经</p>
-                        <p data-id="line_55">已经把我伤口化作玫瑰</p>
-                        <p data-id="line_56">忘了天色 究竟是黑是灰</p>
+                       
                     </div>
                 </div>
             </div>

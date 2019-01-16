@@ -84,6 +84,8 @@ function initlyric() {
 }
 
 var offset = 0;
+var ismobile = /(Android)(?:\s+|\/)(?:[A-z\-]*)([\d.]+)/.test(window.navigator.userAgent) || /(iPhone\sOS)\s([\d_]+)/.test(window.navigator.userAgent);
+var offsetheight = ismobile ? 400 : 0;
 function movelyric(time) {
   time = time + offset;
   for (var i = 0, el; (el = lyricels[i]); i++) {
@@ -103,7 +105,7 @@ function movelyric(time) {
     el.className= "on";
     let index = el.getAttribute("data-index");
     let h = el.offsetHeight;
-    lyricWrap.style.cssText = `transition: -webkit-transform 0.1s ease-out 0s; transform: translateY(${(index - 2) * -h}px);`;
+    lyricWrap.style.cssText = `transition: -webkit-transform 0.1s ease-out 0s; transform: translateY(${(index - 2) * -h + offsetheight}px);`;
   }
 }
 
@@ -120,7 +122,8 @@ function initplayer() {
 }
 
 function onend() {
-
+    playing = false;
+    iconel.className = "icon_play_red j_play";
 }
 
 function onplay() {
@@ -137,7 +140,7 @@ function ontimeupdate() {
 }
 
 function bind() {
-    playel.addEventListener("click", function () {
+    iconel.addEventListener("click", function () {
         if (playing === false) {
             audio.play();
             playing = true;
