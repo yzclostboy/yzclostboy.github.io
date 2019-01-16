@@ -68,7 +68,7 @@ var lyricels;
 function initlyric() {
     var i = 0;
     var str = lyric.replace(/\[(?:(?:(\d+):([\d\.]+))|([^\]]+))\](.*?)([\n\r]+|$)/g, function ($0, $1, $2, $3, $4) {
-        let t = $1 && $1 * 60 + Number($2) - 0;
+        let t = $1 && $1 * 60 + Number($2) + 4;
 
         if (
             t &&
